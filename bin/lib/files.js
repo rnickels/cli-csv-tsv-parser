@@ -30,7 +30,7 @@ module.exports = {
 
       return { correctData, incorrectData }
     } catch (error) {
-      console.error(`Error parsing ${filePath}: ${error}`);
+      throw error;
     }
   },
 
@@ -53,8 +53,8 @@ module.exports = {
   },
 
   removeOldOutputFiles: (dir) => {
-    fs.readdir(dir, (err, files) => {
-      if (err) throw err;
+    fs.readdir(dir, (error, files) => {
+      if (error) throw error;
 
       for (const file of files) {
         fs.unlink(path.join(dir, file), error => {

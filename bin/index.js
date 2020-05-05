@@ -23,16 +23,12 @@ const run = async () => {
       userInput.extension,
     );
 
-    console.log('correctData', correctData);
-    console.log('incorrectData', incorrectData);
-    console.log('extension', userInput.fileFormat);
-
     await Promise.all([
       files.writeOutputFile(correctData, `./output/correctly_formatted.${userInput.fileFormat}`),
       files.writeOutputFile(incorrectData, `./output/incorrectly_formatted.${userInput.fileFormat}`),
     ]);
   } catch (error) {
-    console.error(error);
+    throw error;
   }
 }
 
