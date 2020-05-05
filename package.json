@@ -1,0 +1,27 @@
+{
+  "name": "cli-csv-tsv-parser",
+  "version": "1.0.0",
+  "description": "A CLI tool for parsing CSV and TSV data",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnickels/cli-csv-tsv-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rnickels/cli-csv-tsv-parser/issues"
+  },
+  "homepage": "https://github.com/rnickels/cli-csv-tsv-parser#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "chalk": "^4.0.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.1.0",
+    "line-reader": "^0.4.0"
+  }
+}
